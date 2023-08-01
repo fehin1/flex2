@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    /* background: #1e272e; */
+}
+
+li, a, button {
+    font-size: 500;
+    font-size: 16px;
+    text-decoration: none;
+   
+}
+
+
+header img {
+    width: 60px;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    color:#000;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #000;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    background-color: #0088a9;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0088a9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+   width: 50%;
+   padding-bottom: 50px;
+}
+
+.container .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span {
+    font-weight: 100;
+    
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.container .btn {
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.container .btn a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .container .box {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .container .box .dream {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    .container .heading {
+        width: 100%;
+    }
+    .container .heading h3 {
+         font-size: 1em;
+        /*font-weight: bolder;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #222; */
+    }
+}
